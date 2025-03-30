@@ -1,0 +1,135 @@
+/* Ensures full height and centers content */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-size: cover;
+    font-family: "MedievalSharp", "Cinzel", serif;
+    overflow-x: hidden;
+}
+
+/* Main text area */
+#text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #f9f4d9; /* Off-white parchment tone */
+    padding: 20px;
+    font-size: 3rem;
+    max-width: 90vw;
+    border: 3px solid #8b4513; /* Dark, wood-like border */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Container */
+#game {
+    width: auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f9f4d9;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid #8b4513;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+/* Control Buttons */
+#controls {
+    border: 2px solid #8b4513;
+    padding: 15px;
+    background-color: rgba(60, 61, 55, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* General Button Styling */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    max-width: 90vw;
+    font-size: 2.5rem;
+    padding: 15px 20px;
+    border: 3px solid #8b4513;
+    background-color: #4b3621; /* Rich, dark wood tone */
+    color: #f9f4d9;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #8b4513;
+    border-color: #a0522d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+    color: #f9f4d9;
+}
+
+/* Stats Box */
+#stats {
+    border: 2px solid #8b4513;
+    color: #f9f4d9;
+    padding: 15px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    text-align: center;
+    width: auto;
+    max-width: 90vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Monster Stats */
+#monsterStats {
+    display: none;
+    border: 2px solid #8b0000;
+    color: #f9f4d9;
+    padding: 15px;
+    background-color: rgba(139, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.8);
+}
+
+/* Individual stat item */
+.stat {
+    padding-right: 10px;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    #text {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    #stats {
+        font-size: 1.5rem;
+    }
+}
